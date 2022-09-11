@@ -1,6 +1,6 @@
 <template>
   <nav>
-      <v-toolbar app style="background:linear-gradient(to right, gray , black)">
+      <v-toolbar app style="background:linear-gradient(to right, #de813e , #360312)">
        <v-app-bar-nav-icon @click='toggleDrawer'></v-app-bar-nav-icon>
       <v-toolbar-title >
         <span class="font-weight-light"><img class="img" src="https://i.ibb.co/1Zg9W7q/RustAuto.png" width="60" height="60"> </span>
@@ -21,6 +21,8 @@
         </v-btn>
       </template>
 
+      
+
       <v-list>
         <v-list-item
           v-for="(item, index) in items"
@@ -32,6 +34,7 @@
       </v-list>
     </v-menu>
 
+    <a  id="TIP" href="https://www.tip.edu.ph/">TIP Website</a>
       
       
       </v-toolbar>
@@ -56,11 +59,12 @@
   const drawer = ref(false)
 
   const  items =  ref([
-           { title: 'Dashboard', icon: 'mdi-view-dashboard', path: '/DashBoard' },
            { title: 'Math', icon: 'mdi-plus-one', path: '/basicMath' },
-           { title: 'String App', icon: 'mdi-help-box', path: '/stringApp'},
-           { title: 'Quiz', icon: 'mdi-view-question', path: '/Quiz' },
-           { title: 'Axios', icon: 'mdi-view-dashboard', path: '/Axios' },
+           { title: 'String App', icon: 'mdi-alphabetical', path: '/stringApp'},
+           { title: 'Quiz App', icon: 'mdi-comment-question-outline', path: '/Quiz' },
+           { title: 'Research About Vue', icon: 'mdi-vuetify', path: '/AboutVue' },
+           { title: 'About Me', icon: 'mdi-account-box', path: '/AboutMe' },
+           { title: 'About the Application', icon: 'mdi-application', path: '/AboutApp' },
         ])
 
  function toggleDrawer(){
@@ -78,11 +82,19 @@ function doChannel () {
   margin-top: 3%;
 }
 
-.chkchnnl:hover {
-  color: #373e98;
+a:hover {
+  background: #de813e;
 }
 
 .menudiv:hover {
   background: #373e98;
+}
+
+#TIP {
+  text-decoration: none;
+  padding-left: 10px;
+  margin-right: 20px;
+  color:white;
+  padding-right:10px;
 }
 </style>

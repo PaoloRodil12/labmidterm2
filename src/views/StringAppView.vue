@@ -1,10 +1,11 @@
 <template>
-
+     <body><br>
+<center>
  <v-card
     class="ma-15"
     max-width="700"
     max-height="700"
-    style="background:linear-gradient(#8de8e8, #62a2a2, #274040)"
+    style="background:linear-gradient(#facfce, #f86f4d, #eb603d)"
  >
 <center><v-card-title outlined color="white"> String Manipulator </v-card-title></center>
      <v-container fluid>
@@ -32,7 +33,14 @@
    <p>Convert Vowel :</p>{{convertedText}}<br>
 </v-container>
  </v-card>  
-
+</center>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
 </template>
 
 <script setup>
@@ -73,5 +81,12 @@ function doConvertText () {
 }
 #button:hover {
   color: #373e98;
+}
+
+body {
+  background-image: url('https://wallpaperaccess.com/full/2002264.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 </style>

@@ -1,10 +1,11 @@
 <template>
-
+  <body><br>
+<center>
 <v-card
     class="ma-15"
     max-width="700"
     max-height="800"
-    style="background:linear-gradient(#8de8e8, #62a2a2, #274040)"
+    style="background:linear-gradient(#facfce, #f86f4d, #eb603d)"
  >
 <v-container fluid>
 
@@ -30,6 +31,13 @@
     </div>
     </v-container>
     </v-card>
+  </center>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </body>
   </template>
     
     <script>
@@ -113,6 +121,7 @@
             },
             checkAnswer: function (event, index) {
               let question = this.questions[index];
+              
         
               if (question.userAnswer) {
                 if (this.index < this.questions.length - 1) {
@@ -121,6 +130,7 @@
                       this.index += 1;
                     }.bind(this),
                     3000
+                    
                   );
                 }
                 if (question.userAnswer === question.correct_answer) {
@@ -293,4 +303,11 @@
   h1 {
     color:white;
   }
+
+  body {
+  background-image: url('https://wallpaperaccess.com/full/2002264.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
   </style>

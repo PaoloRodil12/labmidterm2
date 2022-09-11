@@ -5,6 +5,9 @@ import HomeView from '../views/StringAppView.vue'
 import Dashboard from '../views/Dashboard.vue'
 import Quiz from '../views/Quiz.vue'
 import Axios from '../views/Axios.vue'
+import Aboutapp from '../views/Aboutapp.vue'
+import Aboutme from '../views/Aboutme.vue'
+import Aboutvue from '../views/Aboutvue.vue'
 
 
 
@@ -41,6 +44,21 @@ const router = createRouter({
         name: 'axios',
         component: Axios
         },
+        {
+          path: '/AboutApp',
+          name: 'Aboutapp',
+          component: Aboutapp
+          },
+          {
+            path: '/AboutMe',
+            name: 'Aboutme',
+            component: Aboutme
+            },
+            {
+              path: '/AboutVue',
+              name: 'Aboutvue',
+              component: Aboutvue
+              },
 
   ]
 })
